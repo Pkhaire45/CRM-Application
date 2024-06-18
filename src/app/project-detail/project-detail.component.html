@@ -1,0 +1,24 @@
+<div *ngIf="project">
+    <h2>{{ project.projectName }} Details</h2>
+    <div><span>id: </span>{{ project.id }}</div>
+    <div>
+      <label>
+        Project Name:
+        <input [(ngModel)]="project.projectName" placeholder="projectName">
+      </label>
+    </div>
+    <div>
+      <label>
+        Description:
+        <input [(ngModel)]="project.description" placeholder="description">
+      </label>
+    </div>
+    <div>
+      <label>
+        User:
+        <input [(ngModel)]="project.user.username" placeholder="username">
+      </label>
+    </div>
+    <button (click)="save()">Save</button>
+  </div>
+  
